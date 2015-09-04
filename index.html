@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>crescnt</title>
+  	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script src="js/jquery.waypoints.min.js"></script>
+  	<script src="js/forms.js"></script>
+  	<script src="js/waves.js"></script>
+  	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+  	<link href="css/base.css" rel="stylesheet">
+  </head>
+    
+  <body>
+
+  	
+<div id="content-container">
+	 <div id="login_container">
+	 	<div class="input-field homepage-input">
+          <input id="email" type="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field homepage-input">
+          <input id="password" type="password" required>
+          <label for="password">Password</label>
+
+        </div>
+         <a id="login-button" class="waves-effect waves-light btn-flat">Login</a>
+	 </div>
+</div>
+
+<div class="parallax">
+<div id="logo"><span id="title">crescnt</span>
+	 </div>
+
+  <div class="parallax__layer parallax__layer__0">
+  	<div id="stars__container"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__1 cloud">
+    <div class="cloud__layer" id="cloud__layer__5"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__2 cloud">
+  	<div class="cloud__layer" id="cloud__layer__4"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__3 cloud">
+  	  <div class="cloud__layer" id="cloud__layer__3"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__4 cloud">
+  	  	  <div class="cloud__layer" id="cloud__layer__2"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__5 cloud">
+  	  	  <div class="cloud__layer" id="cloud__layer__1"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__6 cloud">
+  	<div class="cloud__layer" id="cloud__layer__0"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__7 cloud">
+  	<div class="cloud__layer" id="cloud__layer__0b"></div>
+  </div>
+
+  <div class="parallax__layer parallax__layer__spaceship">
+  	<div class="spaceship__layer" id="spaceship"></div>
+  </div>
+
+
+  <div class="parallax__layer parallax__layer__8 waves">
+    <div class="waves__layer" id="waves__layer__0"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__9 waves">
+  	<div class="waves__layer" id="waves__layer__1"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__10 waves">
+  	  <div class="waves__layer" id="waves__layer__2"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__11 waves">
+  	  	  <div class="waves__layer" id="waves__layer__3"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__12 waves">
+  	  	  <div class="waves__layer" id="waves__layer__4"></div>
+  </div>
+  <div class="parallax__layer parallax__layer__13 waves">
+  	<div class="waves__layer" id="waves__cover"></div>
+  </div>
+
+  <div class="parallax__cover" id="cover" data-midnight="only">
+  	<div class="content__container">
+  	<div class="panel" id="home">
+  		<h1>CRESCNT<h1>
+  	</div>
+
+  	<div class="panel" id="vendors">
+  		<h1>VENDORS<h1>
+  	</div>
+
+  	<div class="panel" id="about">
+  		<h1>ABOUT<h1>
+  	</div>
+
+  	<div class="panel" id="featured">
+  		<h1>FEATURED VENDORS<h1>
+  	</div>
+
+  	<div class="panel" id="about">
+  			
+  	</div>
+  </div>
+  </div>
+
+</div>
+
+  	<script>
+$('#cover').waypoint(function(direction) {
+	if (direction == "down") {
+		$("#logo").addClass("scrolled");
+		$("#login_container").hide();
+	}
+	else {
+		$("#logo").removeClass("scrolled");
+		$("#login_container").show();
+	}
+
+}, {
+   context: '.parallax'
+});
+</script>
+  </body>
+</html>
